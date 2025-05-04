@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _4_spaceInvaders
+namespace _4_spaceInvaders.GameObjects
 {
     internal class AlienShip : GameObject
     {

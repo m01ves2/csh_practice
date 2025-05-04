@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _4_spaceInvaders
+namespace _4_spaceInvaders.GameObjects
 {
-    internal abstract class GameObject
+    internal class PlayerShip : GameObject
     {
-        public Point location {  get; set; }
     }
 }

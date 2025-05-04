@@ -7,7 +7,7 @@
     <ProjectGuid>{891525C2-06EA-403A-8597-6D18DAFBE929}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_4_spaceInvaders</RootNamespace>
-    <AssemblyName>_4_spaceInvaders</AssemblyName>
+    <AssemblyName>4_spaceInvaders</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,11 +44,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameObjectFactories\AlienShipFactory.cs" />
+    <Compile Include="GameObjectFactories\GameObjectFactory.cs" />
+    <Compile Include="GameObjectFactories\GroundFactory.cs" />
+    <Compile Include="GameObjectFactories\MissileFactory.cs" />
+    <Compile Include="GameObjectFactories\PlayerShipFactory.cs" />
+    <Compile Include="GameObjects\AlienShip.cs" />
+    <Compile Include="GameEngine.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\GameObjectPlace.cs" />
+    <Compile Include="GameObjects\GameObjectType.cs" />
+    <Compile Include="GameRenderer.cs" />
+    <Compile Include="GameScene.cs" />
+    <Compile Include="GameSettings.cs" />
+    <Compile Include="GameObjects\Ground.cs" />
+    <Compile Include="GameObjects\Missile.cs" />
+    <Compile Include="GameObjects\PlayerShip.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
